@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5c8f4b3a-c8b6-4322-9a66-257b3c2652c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/work/ApplicationLivraria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/work/mappers/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/work/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/work/services/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.debug.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/ApplicationLivraria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/configurations/DataBaseProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/work/configurations/DataBaseProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/configurations/DefaultConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/work/configurations/DefaultConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/configurations/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/work/configurations/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/controllers/AutorController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/controllers/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/work/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/controllers/EnderecoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/work/controllers/EnderecoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/controllers/GenericController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/work/controllers/GenericController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/controllers/LivroController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/controllers/expections/FieldMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/work/controllers/expections/FieldMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/controllers/expections/ResourceExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/work/controllers/expections/ResourceExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/controllers/expections/StandardError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/work/controllers/expections/StandardError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/controllers/expections/ValidationError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/work/controllers/expections/ValidationError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/dto/AutorDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/dto/ClienteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/work/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/dto/EnderecoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/work/dto/EnderecoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/dto/LivroDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/entities/Autor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/entities/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/work/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/entities/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/work/entities/Endereco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/entities/Livro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/enums/CategoriaEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/enums/SexoEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/mappers/AutorMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/mappers/ClienteMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/mappers/EnderecoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/work/mappers/EnderecoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/mappers/LivroMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/repositories/AutorRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/repositories/ClienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/work/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/repositories/EnderecoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/work/repositories/EnderecoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/repositories/LivroRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/services/AutorService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/services/ClienteService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/services/EnderecoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/work/services/EnderecoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/services/GenericService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/work/services/GenericService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/services/LivroService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/services/excepctions/DataIntegrityException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/work/services/excepctions/DataIntegrityException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/services/excepctions/ObjectNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/work/services/excepctions/ObjectNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/services/impl/AutorServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/services/impl/ClienteServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/services/impl/EnderecoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/work/services/impl/EnderecoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/services/impl/GenericServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/work/services/impl/GenericServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/livraria/services/impl/LivroServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/livraria/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/work/ApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@172.17.0.4" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@172.17.0.4" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@172.17.0.4" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="livraria: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Xia4xdLlgO1G3cjAUtDx0Jv4Df" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../work" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.quicklists" />
+    <property name="show.run.dashboard.notification" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.livraria.mappers" />
+      <recent name="com.livraria.repositories" />
+      <recent name="com.livraria.entities" />
+      <recent name="com.livraria.controllers" />
+      <recent name="com.livraria.services" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/livraria" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/livraria/controllers" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/livraria/services" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ApplicationLivraria">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="desafio-indra" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="desafio-indra" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="desafio-indra" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.livraria.livraria.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationLivraria" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="desafio-indra" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.work.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.work.ApplicationLivraria" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="livraria2.0" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.livraria.ApplicationLivraria" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ApplicationLivraria" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5c8f4b3a-c8b6-4322-9a66-257b3c2652c0" name="Default Changelist" comment="" />
+      <created>1581531181526</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581531181526</updated>
+      <workItem from="1581531184117" duration="1258000" />
+      <workItem from="1581539652247" duration="5713000" />
+      <workItem from="1581547244135" duration="2065000" />
+      <workItem from="1581562498612" duration="2874000" />
+      <workItem from="1581609881699" duration="1319000" />
+      <workItem from="1581634370670" duration="1430000" />
+      <workItem from="1581647161890" duration="1831000" />
+      <workItem from="1581682712704" duration="80000" />
+      <workItem from="1581696435961" duration="749000" />
+      <workItem from="1581722931831" duration="7136000" />
+      <workItem from="1581783131068" duration="1901000" />
+      <workItem from="1581942436065" duration="233000" />
+      <workItem from="1581942910411" duration="613000" />
+      <workItem from="1582048237403" duration="817000" />
+      <workItem from="1582051128287" duration="50000" />
+      <workItem from="1582054726263" duration="1690000" />
+      <workItem from="1582121704548" duration="2513000" />
+      <workItem from="1582138319171" duration="608000" />
+      <workItem from="1582388457612" duration="851000" />
+      <workItem from="1582393517980" duration="2145000" />
+      <workItem from="1582398281400" duration="599000" />
+      <workItem from="1582518698246" duration="18000" />
+      <workItem from="1582518723575" duration="2749000" />
+      <workItem from="1582522824744" duration="1687000" />
+      <workItem from="1582526235674" duration="867000" />
+      <workItem from="1582568096685" duration="10180000" />
+      <workItem from="1582645918292" duration="202000" />
+      <workItem from="1582646310801" duration="847000" />
+      <workItem from="1582737920371" duration="25000" />
+      <workItem from="1582737960453" duration="989000" />
+      <workItem from="1582747661759" duration="669000" />
+      <workItem from="1582749638404" duration="1534000" />
+      <workItem from="1582774837303" duration="2186000" />
+      <workItem from="1582841326469" duration="1587000" />
+      <workItem from="1582846049985" duration="17000" />
+      <workItem from="1582846388731" duration="23000" />
+      <workItem from="1582897437958" duration="241000" />
+      <workItem from="1582939429478" duration="2405000" />
+      <workItem from="1583117916741" duration="1882000" />
+      <workItem from="1583152491394" duration="1015000" />
+      <workItem from="1583187828128" duration="865000" />
+      <workItem from="1583195409916" duration="199000" />
+      <workItem from="1583202313349" duration="732000" />
+      <workItem from="1583244606441" duration="31000" />
+      <workItem from="1583457057864" duration="5337000" />
+      <workItem from="1583497809130" duration="448000" />
+      <workItem from="1583879236453" duration="123000" />
+      <workItem from="1583935794266" duration="25000" />
+      <workItem from="1584041672436" duration="353000" />
+      <workItem from="1584042395120" duration="273000" />
+      <workItem from="1586394252100" duration="1234000" />
+      <workItem from="1586962280056" duration="6000" />
+      <workItem from="1588178532318" duration="433000" />
+      <workItem from="1594321845334" duration="19000" />
+      <workItem from="1594321897329" duration="2809000" />
+      <workItem from="1594327953599" duration="2736000" />
+      <workItem from="1594331725286" duration="3333000" />
+      <workItem from="1594336058976" duration="5559000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2021" y="168" width="1144" height="684" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594340835507">
+      <screen x="1920" y="140" width="1366" height="768" />
+    </state>
+    <state x="2021" y="168" width="1144" height="684" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.140.1366.768/0.168.1920.684@1920.140.1366.768" timestamp="1594340835507" />
+    <state x="737" y="254" width="424" height="480" key="FileChooserDialogImpl" timestamp="1594336272065">
+      <screen x="0" y="168" width="1920" height="684" />
+    </state>
+    <state x="2103" y="135" key="FileChooserDialogImpl/1366.0.1920.1080/0.105.1366.768@1366.0.1920.1080" timestamp="1588178795513" />
+    <state x="737" y="254" width="424" height="480" key="FileChooserDialogImpl/1920.140.1366.768/0.168.1920.684@0.168.1920.684" timestamp="1594336272065" />
+    <state width="1868" height="451" key="GridCell.Tab.0.bottom" timestamp="1594342047294">
+      <screen x="0" y="168" width="1920" height="684" />
+    </state>
+    <state width="1868" height="451" key="GridCell.Tab.0.bottom/1920.140.1366.768/0.168.1920.684@0.168.1920.684" timestamp="1594342047294" />
+    <state width="1314" height="305" key="GridCell.Tab.0.bottom/1920.140.1366.768/0.168.1920.684@1920.140.1366.768" timestamp="1594340871648" />
+    <state width="1868" height="451" key="GridCell.Tab.0.center" timestamp="1594342047294">
+      <screen x="0" y="168" width="1920" height="684" />
+    </state>
+    <state width="1868" height="451" key="GridCell.Tab.0.center/1920.140.1366.768/0.168.1920.684@0.168.1920.684" timestamp="1594342047294" />
+    <state width="1314" height="305" key="GridCell.Tab.0.center/1920.140.1366.768/0.168.1920.684@1920.140.1366.768" timestamp="1594340871647" />
+    <state width="1868" height="451" key="GridCell.Tab.0.left" timestamp="1594342047294">
+      <screen x="0" y="168" width="1920" height="684" />
+    </state>
+    <state width="1868" height="451" key="GridCell.Tab.0.left/1920.140.1366.768/0.168.1920.684@0.168.1920.684" timestamp="1594342047294" />
+    <state width="1314" height="305" key="GridCell.Tab.0.left/1920.140.1366.768/0.168.1920.684@1920.140.1366.768" timestamp="1594340871647" />
+    <state width="1868" height="451" key="GridCell.Tab.0.right" timestamp="1594342047294">
+      <screen x="0" y="168" width="1920" height="684" />
+    </state>
+    <state width="1868" height="451" key="GridCell.Tab.0.right/1920.140.1366.768/0.168.1920.684@0.168.1920.684" timestamp="1594342047294" />
+    <state width="1314" height="305" key="GridCell.Tab.0.right/1920.140.1366.768/0.168.1920.684@1920.140.1366.768" timestamp="1594340871647" />
+    <state width="1868" height="451" key="GridCell.Tab.1.bottom" timestamp="1594342047295">
+      <screen x="0" y="168" width="1920" height="684" />
+    </state>
+    <state width="1868" height="451" key="GridCell.Tab.1.bottom/1920.140.1366.768/0.168.1920.684@0.168.1920.684" timestamp="1594342047295" />
+    <state width="1314" height="305" key="GridCell.Tab.1.bottom/1920.140.1366.768/0.168.1920.684@1920.140.1366.768" timestamp="1594340871648" />
+    <state width="1868" height="451" key="GridCell.Tab.1.center" timestamp="1594342047295">
+      <screen x="0" y="168" width="1920" height="684" />
+    </state>
+    <state width="1868" height="451" key="GridCell.Tab.1.center/1920.140.1366.768/0.168.1920.684@0.168.1920.684" timestamp="1594342047295" />
+    <state width="1314" height="305" key="GridCell.Tab.1.center/1920.140.1366.768/0.168.1920.684@1920.140.1366.768" timestamp="1594340871648" />
+    <state width="1868" height="451" key="GridCell.Tab.1.left" timestamp="1594342047294">
+      <screen x="0" y="168" width="1920" height="684" />
+    </state>
+    <state width="1868" height="451" key="GridCell.Tab.1.left/1920.140.1366.768/0.168.1920.684@0.168.1920.684" timestamp="1594342047294" />
+    <state width="1314" height="305" key="GridCell.Tab.1.left/1920.140.1366.768/0.168.1920.684@1920.140.1366.768" timestamp="1594340871648" />
+    <state width="1868" height="451" key="GridCell.Tab.1.right" timestamp="1594342047295">
+      <screen x="0" y="168" width="1920" height="684" />
+    </state>
+    <state width="1868" height="451" key="GridCell.Tab.1.right/1920.140.1366.768/0.168.1920.684@0.168.1920.684" timestamp="1594342047295" />
+    <state width="1314" height="305" key="GridCell.Tab.1.right/1920.140.1366.768/0.168.1920.684@1920.140.1366.768" timestamp="1594340871648" />
+    <state x="443" y="168" width="1024" height="680" key="SettingsEditor" timestamp="1594331770750">
+      <screen x="0" y="168" width="1920" height="684" />
+    </state>
+    <state x="443" y="168" width="1024" height="680" key="SettingsEditor/1920.140.1366.768/0.168.1920.684@0.168.1920.684" timestamp="1594331770750" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/work/controllers/UserController.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="objDto" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
