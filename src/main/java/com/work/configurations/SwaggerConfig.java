@@ -50,8 +50,8 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("API Livraria: aplicação Java com Spring")
-                .description("API de um Livraria onde é possível, Alugar, Devolver e listar livros.")
+                .title("API POSTO: aplicação Java com Spring")
+                .description("API para tratamento de dados CSVe cadastros de Postos de Combustivel")
                 .version("1.0.0")
                 .contact(new Contact("Israel Araujo", "", "rodg.isra@gmail.com"))
                 .build();
