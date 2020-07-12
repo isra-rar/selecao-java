@@ -2,65 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c8f4b3a-c8b6-4322-9a66-257b3c2652c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_opencsv_opencsv_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_text_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/work/controllers/PostoProcessoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/work/dto/PostoProcessoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/work/entities/MediaValorCompraEVenda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/work/entities/PostoProcesso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/work/mappers/PostoProcessoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/work/repositories/PostoProcessoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/work/services/PostoProcessoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/work/services/excepctions/FailedSaveProcesso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/work/services/excepctions/NoProcessFound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/work/services/excepctions/ProcessoAlredyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/work/services/excepctions/ProcessoNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/work/services/impl/PostoProcessoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/processosData.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio-indra.iml" beforeDir="false" afterPath="$PROJECT_DIR$/desafio-indra.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/work/ApplicationLivraria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/work/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/ApplicationLivraria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/configurations/DataBaseProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/configurations/DataBaseProperties.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/configurations/DefaultConfiguration$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/configurations/DefaultConfiguration$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/configurations/SwaggerConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/configurations/SwaggerConfig$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/controllers/EnderecoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/controllers/EnderecoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/controllers/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/controllers/expections/FieldMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/controllers/expections/FieldMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/controllers/expections/ResourceExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/controllers/expections/ResourceExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/controllers/expections/StandardError.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/controllers/expections/StandardError.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/controllers/expections/ValidationError.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/controllers/expections/ValidationError.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/dto/EnderecoDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/dto/EnderecoDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/dto/UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/dto/UserDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/entities/Endereco.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/entities/Endereco.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/entities/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/mappers/EnderecoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/mappers/EnderecoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/mappers/EnderecoMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/mappers/EnderecoMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/mappers/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/mappers/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/mappers/UserMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/mappers/UserMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/repositories/EnderecoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/repositories/EnderecoRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/repositories/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/repositories/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/services/EnderecoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/services/EnderecoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/services/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/services/excepctions/DataIntegrityException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/services/excepctions/DataIntegrityException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/services/excepctions/ObjectNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/services/excepctions/ObjectNotFoundException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/services/impl/EnderecoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/services/impl/EnderecoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/work/services/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/services/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/work/mappers/EnderecoMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/work/mappers/EnderecoMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/work/mappers/UserMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/work/mappers/UserMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.work.ApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.work.ApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.work.ApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.work.ApplicationTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/work-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/work-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/work-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/work-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/work/services/impl/PostoProcessoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/work/services/impl/PostoProcessoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/work/services/impl/PostoProcessoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/work/services/impl/PostoProcessoImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +72,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rentacar-challeng-genreal" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../livraria2.0" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -255,7 +200,7 @@
       <workItem from="1594327953599" duration="2736000" />
       <workItem from="1594331725286" duration="3333000" />
       <workItem from="1594336058976" duration="5559000" />
-      <workItem from="1594382237786" duration="74867000" />
+      <workItem from="1594382237786" duration="77548000" />
     </task>
     <servers />
   </component>
@@ -297,82 +242,82 @@
       <screen x="0" y="28" width="1920" height="824" />
     </state>
     <state width="307" height="567" key="DebuggerActiveHint/1920.140.1366.768/0.28.1920.824@0.28.1920.824" timestamp="1594406851730" />
-    <state x="737" y="272" width="424" height="480" key="FileChooserDialogImpl" timestamp="1594581367605">
+    <state x="737" y="272" width="424" height="480" key="FileChooserDialogImpl" timestamp="1594595671420">
       <screen x="0" y="186" width="1920" height="684" />
     </state>
     <state x="2103" y="135" key="FileChooserDialogImpl/1366.0.1920.1080/0.105.1366.768@1366.0.1920.1080" timestamp="1588178795513" />
     <state x="737" y="254" width="424" height="480" key="FileChooserDialogImpl/1920.140.1366.768/0.168.1920.684@0.168.1920.684" timestamp="1594382462007" />
-    <state x="737" y="272" width="424" height="480" key="FileChooserDialogImpl/1920.140.1366.768/0.186.1920.684@0.186.1920.684" timestamp="1594581367605" />
+    <state x="737" y="272" width="424" height="480" key="FileChooserDialogImpl/1920.140.1366.768/0.186.1920.684@0.186.1920.684" timestamp="1594595671420" />
     <state x="737" y="132" width="424" height="480" key="FileChooserDialogImpl/1920.140.1366.768/0.28.1920.824@0.28.1920.824" timestamp="1594418732290" />
-    <state width="1868" height="265" key="GridCell.Tab.0.bottom" timestamp="1594594965647">
+    <state width="1868" height="265" key="GridCell.Tab.0.bottom" timestamp="1594597250731">
       <screen x="0" y="186" width="1920" height="684" />
     </state>
     <state width="1868" height="343" key="GridCell.Tab.0.bottom/1920.140.1366.768/0.168.1920.684@0.168.1920.684" timestamp="1594393422435" />
     <state width="1314" height="305" key="GridCell.Tab.0.bottom/1920.140.1366.768/0.168.1920.684@1920.140.1366.768" timestamp="1594340871648" />
-    <state width="1868" height="265" key="GridCell.Tab.0.bottom/1920.140.1366.768/0.186.1920.684@0.186.1920.684" timestamp="1594594965647" />
+    <state width="1868" height="265" key="GridCell.Tab.0.bottom/1920.140.1366.768/0.186.1920.684@0.186.1920.684" timestamp="1594597250731" />
     <state width="1314" height="294" key="GridCell.Tab.0.bottom/1920.140.1366.768/0.28.1366.684@0.28.1366.684" timestamp="1594575558095" />
     <state width="1868" height="342" key="GridCell.Tab.0.bottom/1920.140.1366.768/0.28.1920.824@0.28.1920.824" timestamp="1594478979014" />
     <state width="1868" height="342" key="GridCell.Tab.0.bottom/1920.140.1366.768/0.28.1920.996@0.28.1920.996" timestamp="1594479620346" />
-    <state width="1868" height="265" key="GridCell.Tab.0.center" timestamp="1594594965647">
+    <state width="1868" height="265" key="GridCell.Tab.0.center" timestamp="1594597250731">
       <screen x="0" y="186" width="1920" height="684" />
     </state>
     <state width="1868" height="343" key="GridCell.Tab.0.center/1920.140.1366.768/0.168.1920.684@0.168.1920.684" timestamp="1594393422435" />
     <state width="1314" height="305" key="GridCell.Tab.0.center/1920.140.1366.768/0.168.1920.684@1920.140.1366.768" timestamp="1594340871647" />
-    <state width="1868" height="265" key="GridCell.Tab.0.center/1920.140.1366.768/0.186.1920.684@0.186.1920.684" timestamp="1594594965647" />
+    <state width="1868" height="265" key="GridCell.Tab.0.center/1920.140.1366.768/0.186.1920.684@0.186.1920.684" timestamp="1594597250731" />
     <state width="1314" height="294" key="GridCell.Tab.0.center/1920.140.1366.768/0.28.1366.684@0.28.1366.684" timestamp="1594575558094" />
     <state width="1868" height="342" key="GridCell.Tab.0.center/1920.140.1366.768/0.28.1920.824@0.28.1920.824" timestamp="1594478979014" />
     <state width="1868" height="342" key="GridCell.Tab.0.center/1920.140.1366.768/0.28.1920.996@0.28.1920.996" timestamp="1594479620346" />
-    <state width="1868" height="265" key="GridCell.Tab.0.left" timestamp="1594594965647">
+    <state width="1868" height="265" key="GridCell.Tab.0.left" timestamp="1594597250730">
       <screen x="0" y="186" width="1920" height="684" />
     </state>
     <state width="1868" height="343" key="GridCell.Tab.0.left/1920.140.1366.768/0.168.1920.684@0.168.1920.684" timestamp="1594393422435" />
     <state width="1314" height="305" key="GridCell.Tab.0.left/1920.140.1366.768/0.168.1920.684@1920.140.1366.768" timestamp="1594340871647" />
-    <state width="1868" height="265" key="GridCell.Tab.0.left/1920.140.1366.768/0.186.1920.684@0.186.1920.684" timestamp="1594594965647" />
+    <state width="1868" height="265" key="GridCell.Tab.0.left/1920.140.1366.768/0.186.1920.684@0.186.1920.684" timestamp="1594597250730" />
     <state width="1314" height="294" key="GridCell.Tab.0.left/1920.140.1366.768/0.28.1366.684@0.28.1366.684" timestamp="1594575558094" />
     <state width="1868" height="342" key="GridCell.Tab.0.left/1920.140.1366.768/0.28.1920.824@0.28.1920.824" timestamp="1594478979014" />
     <state width="1868" height="342" key="GridCell.Tab.0.left/1920.140.1366.768/0.28.1920.996@0.28.1920.996" timestamp="1594479620345" />
-    <state width="1868" height="265" key="GridCell.Tab.0.right" timestamp="1594594965647">
+    <state width="1868" height="265" key="GridCell.Tab.0.right" timestamp="1594597250731">
       <screen x="0" y="186" width="1920" height="684" />
     </state>
     <state width="1868" height="343" key="GridCell.Tab.0.right/1920.140.1366.768/0.168.1920.684@0.168.1920.684" timestamp="1594393422435" />
     <state width="1314" height="305" key="GridCell.Tab.0.right/1920.140.1366.768/0.168.1920.684@1920.140.1366.768" timestamp="1594340871647" />
-    <state width="1868" height="265" key="GridCell.Tab.0.right/1920.140.1366.768/0.186.1920.684@0.186.1920.684" timestamp="1594594965647" />
+    <state width="1868" height="265" key="GridCell.Tab.0.right/1920.140.1366.768/0.186.1920.684@0.186.1920.684" timestamp="1594597250731" />
     <state width="1314" height="294" key="GridCell.Tab.0.right/1920.140.1366.768/0.28.1366.684@0.28.1366.684" timestamp="1594575558094" />
     <state width="1868" height="342" key="GridCell.Tab.0.right/1920.140.1366.768/0.28.1920.824@0.28.1920.824" timestamp="1594478979014" />
     <state width="1868" height="342" key="GridCell.Tab.0.right/1920.140.1366.768/0.28.1920.996@0.28.1920.996" timestamp="1594479620346" />
-    <state width="1868" height="265" key="GridCell.Tab.1.bottom" timestamp="1594594965647">
+    <state width="1868" height="265" key="GridCell.Tab.1.bottom" timestamp="1594597250731">
       <screen x="0" y="186" width="1920" height="684" />
     </state>
     <state width="1868" height="343" key="GridCell.Tab.1.bottom/1920.140.1366.768/0.168.1920.684@0.168.1920.684" timestamp="1594393422435" />
     <state width="1314" height="305" key="GridCell.Tab.1.bottom/1920.140.1366.768/0.168.1920.684@1920.140.1366.768" timestamp="1594340871648" />
-    <state width="1868" height="265" key="GridCell.Tab.1.bottom/1920.140.1366.768/0.186.1920.684@0.186.1920.684" timestamp="1594594965647" />
+    <state width="1868" height="265" key="GridCell.Tab.1.bottom/1920.140.1366.768/0.186.1920.684@0.186.1920.684" timestamp="1594597250731" />
     <state width="1314" height="294" key="GridCell.Tab.1.bottom/1920.140.1366.768/0.28.1366.684@0.28.1366.684" timestamp="1594575558095" />
     <state width="1868" height="342" key="GridCell.Tab.1.bottom/1920.140.1366.768/0.28.1920.824@0.28.1920.824" timestamp="1594478978775" />
     <state width="1868" height="342" key="GridCell.Tab.1.bottom/1920.140.1366.768/0.28.1920.996@0.28.1920.996" timestamp="1594479620347" />
-    <state width="1868" height="265" key="GridCell.Tab.1.center" timestamp="1594594965647">
+    <state width="1868" height="265" key="GridCell.Tab.1.center" timestamp="1594597250731">
       <screen x="0" y="186" width="1920" height="684" />
     </state>
     <state width="1868" height="343" key="GridCell.Tab.1.center/1920.140.1366.768/0.168.1920.684@0.168.1920.684" timestamp="1594393422435" />
     <state width="1314" height="305" key="GridCell.Tab.1.center/1920.140.1366.768/0.168.1920.684@1920.140.1366.768" timestamp="1594340871648" />
-    <state width="1868" height="265" key="GridCell.Tab.1.center/1920.140.1366.768/0.186.1920.684@0.186.1920.684" timestamp="1594594965647" />
+    <state width="1868" height="265" key="GridCell.Tab.1.center/1920.140.1366.768/0.186.1920.684@0.186.1920.684" timestamp="1594597250731" />
     <state width="1314" height="294" key="GridCell.Tab.1.center/1920.140.1366.768/0.28.1366.684@0.28.1366.684" timestamp="1594575558095" />
     <state width="1868" height="342" key="GridCell.Tab.1.center/1920.140.1366.768/0.28.1920.824@0.28.1920.824" timestamp="1594478978775" />
     <state width="1868" height="342" key="GridCell.Tab.1.center/1920.140.1366.768/0.28.1920.996@0.28.1920.996" timestamp="1594479620346" />
-    <state width="1868" height="265" key="GridCell.Tab.1.left" timestamp="1594594965647">
+    <state width="1868" height="265" key="GridCell.Tab.1.left" timestamp="1594597250731">
       <screen x="0" y="186" width="1920" height="684" />
     </state>
     <state width="1868" height="343" key="GridCell.Tab.1.left/1920.140.1366.768/0.168.1920.684@0.168.1920.684" timestamp="1594393422435" />
     <state width="1314" height="305" key="GridCell.Tab.1.left/1920.140.1366.768/0.168.1920.684@1920.140.1366.768" timestamp="1594340871648" />
-    <state width="1868" height="265" key="GridCell.Tab.1.left/1920.140.1366.768/0.186.1920.684@0.186.1920.684" timestamp="1594594965647" />
+    <state width="1868" height="265" key="GridCell.Tab.1.left/1920.140.1366.768/0.186.1920.684@0.186.1920.684" timestamp="1594597250731" />
     <state width="1314" height="294" key="GridCell.Tab.1.left/1920.140.1366.768/0.28.1366.684@0.28.1366.684" timestamp="1594575558095" />
     <state width="1868" height="342" key="GridCell.Tab.1.left/1920.140.1366.768/0.28.1920.824@0.28.1920.824" timestamp="1594478978775" />
     <state width="1868" height="342" key="GridCell.Tab.1.left/1920.140.1366.768/0.28.1920.996@0.28.1920.996" timestamp="1594479620346" />
-    <state width="1868" height="265" key="GridCell.Tab.1.right" timestamp="1594594965647">
+    <state width="1868" height="265" key="GridCell.Tab.1.right" timestamp="1594597250731">
       <screen x="0" y="186" width="1920" height="684" />
     </state>
     <state width="1868" height="343" key="GridCell.Tab.1.right/1920.140.1366.768/0.168.1920.684@0.168.1920.684" timestamp="1594393422435" />
     <state width="1314" height="305" key="GridCell.Tab.1.right/1920.140.1366.768/0.168.1920.684@1920.140.1366.768" timestamp="1594340871648" />
-    <state width="1868" height="265" key="GridCell.Tab.1.right/1920.140.1366.768/0.186.1920.684@0.186.1920.684" timestamp="1594594965647" />
+    <state width="1868" height="265" key="GridCell.Tab.1.right/1920.140.1366.768/0.186.1920.684@0.186.1920.684" timestamp="1594597250731" />
     <state width="1314" height="294" key="GridCell.Tab.1.right/1920.140.1366.768/0.28.1366.684@0.28.1366.684" timestamp="1594575558095" />
     <state width="1868" height="342" key="GridCell.Tab.1.right/1920.140.1366.768/0.28.1920.824@0.28.1920.824" timestamp="1594478978775" />
     <state width="1868" height="342" key="GridCell.Tab.1.right/1920.140.1366.768/0.28.1920.996@0.28.1920.996" timestamp="1594479620347" />

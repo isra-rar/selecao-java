@@ -36,6 +36,9 @@ public class PostoProcessoImpl extends GenericServiceImpl<PostoProcessoRepositor
     @Override
     public Double getMediaCombustivelByMunicipio(String municipio) {
         Double mediaMunicipio = getRepository().mediaValorVendaByMunicipio(municipio);
+        if (mediaMunicipio == null) {
+            throw new ObjectNotFoundException("Não existem dados para esse municipio");
+        }
         return mediaMunicipio;
     }
 
@@ -43,6 +46,10 @@ public class PostoProcessoImpl extends GenericServiceImpl<PostoProcessoRepositor
     public MediaValorCompraEVenda getMediaValorCompraEVendaByMunicipio(String municipio) {
         Double mediaValorVendaMunicipio = getRepository().mediaValorVendaByMunicipio(municipio);
         Double mediaValorCompraMunicipio = getRepository().mediaValorCompraByMunicipio(municipio);
+        if (mediaValorCompraMunicipio == null || mediaValorVendaMunicipio == null){
+            throw new ObjectNotFoundException("Dados inconsistentes");
+        }
+
         MediaValorCompraEVenda mediaValorCompraEVenda = new MediaValorCompraEVenda(mediaValorVendaMunicipio, mediaValorCompraMunicipio);
         return mediaValorCompraEVenda;
     }
@@ -52,12 +59,19 @@ public class PostoProcessoImpl extends GenericServiceImpl<PostoProcessoRepositor
         Double mediaValorVendaBandeira = getRepository().mediaValorVendaByBandeira(bandeira);
         Double mediaValorCompraBandeira = getRepository().mediaValorCompraByBandeira(bandeira);
         MediaValorCompraEVenda mediaValorCompraEVenda = new MediaValorCompraEVenda(mediaValorVendaBandeira, mediaValorCompraBandeira);
+        if (mediaValorVendaBandeira == null || mediaValorCompraBandeira == null){
+            throw new ObjectNotFoundException("Dados inconsistentes");
+        }
         return mediaValorCompraEVenda;
     }
 
     @Override
     public Page<PostoProcesso> getInfoByDataColeta(Integer page, Integer linesPorPage, String orderBy, String direction, String dataColeta) {
         PageRequest pageRequest = PageRequest.of(page, linesPorPage, Sort.Direction.valueOf(direction), orderBy);
+        Page<PostoProcesso> postoProcessos = getRepository().getInfoBySiglaRegiao(pageRequest, dataColeta);
+        if (postoProcessos.getContent().isEmpty()) {
+            throw new ObjectNotFoundException("Não existem dados para essa Data de Coleta");
+        }
         return getRepository().getInfoByDataColeta(pageRequest, dataColeta);
     }
 
@@ -65,12 +79,21 @@ public class PostoProcessoImpl extends GenericServiceImpl<PostoProcessoRepositor
     @Override
     public Page<PostoProcesso> getInfoBySiglaRegiao(Integer page, Integer linesPorPage, String orderBy, String direction, String sigla) {
         PageRequest pageRequest = PageRequest.of(page, linesPorPage, Sort.Direction.valueOf(direction), orderBy);
+        Page<PostoProcesso> postoProcessos = getRepository().getInfoBySiglaRegiao(pageRequest, sigla);
+        if (postoProcessos.getContent().isEmpty()) {
+            throw new ObjectNotFoundException("Não existem dados para essa Sigla");
+        }
+
         return getRepository().getInfoBySiglaRegiao(pageRequest, sigla);
     }
 
     @Override
     public Page<PostoProcesso> getInfoByDistribuidora(Integer page, Integer linesPorPage, String orderBy, String direction, String bandeira) {
         PageRequest pageRequest = PageRequest.of(page, linesPorPage, Sort.Direction.valueOf(direction), orderBy);
+        Page<PostoProcesso> postoProcessos = getRepository().getInfoBySiglaRegiao(pageRequest, bandeira);
+        if (postoProcessos.getContent().isEmpty()) {
+            throw new ObjectNotFoundException("Não existem dados para essa Distribuidora");
+        }
         return getRepository().getInfoByDistribuidora(pageRequest, bandeira);
     }
 
@@ -87,8 +110,6 @@ public class PostoProcessoImpl extends GenericServiceImpl<PostoProcessoRepositor
     public void saveAll() throws FileNotFoundException {
 
         String file = System.getProperty("user.dir") + "/src/main/resources/processosData.csv";
-        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
-        Calendar calendar = Calendar.getInstance();
 
         List<PostoProcessoDTO> postoProcessoDTOList = new CsvToBeanBuilder(new FileReader(file))
                 .withType(PostoProcessoDTO.class).withSkipLines(1).withSeparator('\t').build().parse();
@@ -113,7 +134,7 @@ public class PostoProcessoImpl extends GenericServiceImpl<PostoProcessoRepositor
                         .replace(",", "."));
                 postoProcessoDTO.setRegiaoSigla(postoProcessoDTO.getRegiaoSigla().trim());
             } catch (NullPointerException e) {
-                e.printStackTrace();
+                throw new DataIntegrityException("Erro ao tratar os dados do CSV");
             }
 
         }
@@ -125,8 +146,8 @@ public class PostoProcessoImpl extends GenericServiceImpl<PostoProcessoRepositor
     public void update(PostoProcessoDTO objDto, Long id) {
         PostoProcessoDTO postoProcessoDTO = getById(id);
         updateData(postoProcessoDTO, objDto);
-        PostoProcesso cliente = getModelMapper().postoProcessoDtoToPostoProcesso(postoProcessoDTO);
-        getRepository().save(cliente);
+        PostoProcesso postoProcesso = getModelMapper().postoProcessoDtoToPostoProcesso(postoProcessoDTO);
+        getRepository().save(postoProcesso);
     }
 
     @Override
