@@ -10,8 +10,7 @@ import java.io.FileNotFoundException;
 
 public interface PostoProcessoService extends GenericService{
 
-    PostoProcessoDTO getById(Long id);
-
+    PostoProcesso getById(Long id);
 
     Double getMediaCombustivelByMunicipio(String municipio);
 
@@ -29,7 +28,7 @@ public interface PostoProcessoService extends GenericService{
 
     void saveAll() throws FailedSaveProcesso, FileNotFoundException;
 
-    void update(PostoProcessoDTO objDto, Long id);
+    void update(PostoProcesso objDto, Long id);
 
     void delete(Long id);
 

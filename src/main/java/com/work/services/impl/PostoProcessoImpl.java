@@ -26,11 +26,11 @@ import java.util.Optional;
 public class PostoProcessoImpl extends GenericServiceImpl<PostoProcessoRepository, PostoProcessoMapper> implements PostoProcessoService {
 
     @Override
-    public PostoProcessoDTO getById(Long id) {
+    public PostoProcesso getById(Long id) {
         Optional<PostoProcesso> obj = getRepository().findById(id);
         obj.orElseThrow(() -> new ObjectNotFoundException(
                 "POSTO não encontrado"));
-        return getModelMapper().postoProcessoToPostoProcessoDTO(obj.get());
+        return obj.get();
     }
 
     @Override
@@ -143,10 +143,9 @@ public class PostoProcessoImpl extends GenericServiceImpl<PostoProcessoRepositor
     }
 
     @Override
-    public void update(PostoProcessoDTO objDto, Long id) {
-        PostoProcessoDTO postoProcessoDTO = getById(id);
-        updateData(postoProcessoDTO, objDto);
-        PostoProcesso postoProcesso = getModelMapper().postoProcessoDtoToPostoProcesso(postoProcessoDTO);
+    public void update(PostoProcesso objDto, Long id) {
+        PostoProcesso postoProcesso = getById(id);
+        updateData(postoProcesso, objDto);
         getRepository().save(postoProcesso);
     }
 
@@ -160,7 +159,7 @@ public class PostoProcessoImpl extends GenericServiceImpl<PostoProcessoRepositor
         }
     }
 
-    private void updateData(PostoProcessoDTO newObj, PostoProcessoDTO obj) {
+    private void updateData(PostoProcesso newObj, PostoProcesso obj) {
         newObj.setRegiaoSigla(obj.getRegiaoSigla());
         newObj.setEstadoSigla(obj.getEstadoSigla());
         newObj.setMunicipio(obj.getMunicipio());

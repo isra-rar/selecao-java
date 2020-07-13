@@ -24,8 +24,8 @@ public class PostoProcessoController extends GenericController<PostoProcessoServ
     }
 
     @GetMapping(value = "/postos/{id}")
-    public ResponseEntity<PostoProcessoDTO> findById(@PathVariable Long id) {
-        PostoProcessoDTO obj = getService().getById(id);
+    public ResponseEntity<PostoProcesso> findById(@PathVariable Long id) {
+        PostoProcesso obj = getService().getById(id);
         return ResponseEntity.ok().body(obj);
     }
 
@@ -90,7 +90,7 @@ public class PostoProcessoController extends GenericController<PostoProcessoServ
     }
 
     @PutMapping(value = "/postos/{id}")
-    public ResponseEntity<Void> update(@RequestBody PostoProcessoDTO obj, @PathVariable Long id) {
+    public ResponseEntity<Void> update(@RequestBody PostoProcesso obj, @PathVariable Long id) {
         getService().update(obj, id);
         return ResponseEntity.noContent().build();
     }
