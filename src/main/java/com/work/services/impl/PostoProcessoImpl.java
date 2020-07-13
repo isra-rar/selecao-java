@@ -68,7 +68,7 @@ public class PostoProcessoImpl extends GenericServiceImpl<PostoProcessoRepositor
     @Override
     public Page<PostoProcesso> getInfoByDataColeta(Integer page, Integer linesPorPage, String orderBy, String direction, String dataColeta) {
         PageRequest pageRequest = PageRequest.of(page, linesPorPage, Sort.Direction.valueOf(direction), orderBy);
-        Page<PostoProcesso> postoProcessos = getRepository().getInfoBySiglaRegiao(pageRequest, dataColeta);
+        Page<PostoProcesso> postoProcessos = getRepository().getInfoByDataColeta(pageRequest, dataColeta);
         if (postoProcessos.getContent().isEmpty()) {
             throw new ObjectNotFoundException("Não existem dados para essa Data de Coleta");
         }
@@ -90,7 +90,7 @@ public class PostoProcessoImpl extends GenericServiceImpl<PostoProcessoRepositor
     @Override
     public Page<PostoProcesso> getInfoByDistribuidora(Integer page, Integer linesPorPage, String orderBy, String direction, String bandeira) {
         PageRequest pageRequest = PageRequest.of(page, linesPorPage, Sort.Direction.valueOf(direction), orderBy);
-        Page<PostoProcesso> postoProcessos = getRepository().getInfoBySiglaRegiao(pageRequest, bandeira);
+        Page<PostoProcesso> postoProcessos = getRepository().getInfoByDistribuidora(pageRequest, bandeira);
         if (postoProcessos.getContent().isEmpty()) {
             throw new ObjectNotFoundException("Não existem dados para essa Distribuidora");
         }
