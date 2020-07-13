@@ -99,11 +99,11 @@ public class PostoProcessoImpl extends GenericServiceImpl<PostoProcessoRepositor
 
 
     @Override
-    public PostoProcessoDTO save(PostoProcessoDTO objDto) {
-        PostoProcesso obj = getModelMapper().postoProcessoDtoToPostoProcesso(objDto);
+    public PostoProcesso save(PostoProcesso objDto) {
+        PostoProcesso obj = objDto;
         obj.setId(null);
-        PostoProcesso cliente = getRepository().save(obj);
-        return getModelMapper().postoProcessoToPostoProcessoDTO(cliente);
+        PostoProcesso postoProcesso = getRepository().save(obj);
+        return postoProcesso;
     }
 
     @Override

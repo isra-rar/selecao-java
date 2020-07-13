@@ -82,11 +82,11 @@ public class PostoProcessoController extends GenericController<PostoProcessoServ
     }
 
     @PostMapping(value = "/postos")
-    public ResponseEntity<PostoProcessoDTO> insert(@Valid @RequestBody PostoProcessoDTO objDto) {
-        PostoProcessoDTO postoProcessoDTO = getService().save(objDto);
+    public ResponseEntity<PostoProcesso> insert(@Valid @RequestBody PostoProcesso objDto) {
+        PostoProcesso postoProcesso = getService().save(objDto);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
-                .path("/{id}").buildAndExpand(postoProcessoDTO.getId()).toUri();
-        return ResponseEntity.created(uri).body(postoProcessoDTO);
+                .path("/{id}").buildAndExpand(postoProcesso.getId()).toUri();
+        return ResponseEntity.created(uri).body(postoProcesso);
     }
 
     @PutMapping(value = "/postos/{id}")

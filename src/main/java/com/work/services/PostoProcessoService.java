@@ -24,7 +24,7 @@ public interface PostoProcessoService extends GenericService{
 
     Page<PostoProcesso> getInfoByDistribuidora(Integer page, Integer linesPorPage, String orderBy, String direction, String distribuidora);
 
-    PostoProcessoDTO save(PostoProcessoDTO postoProcessoDTO);
+    PostoProcesso save(PostoProcesso postoProcessoDTO);
 
     void saveAll() throws FailedSaveProcesso, FileNotFoundException;
 
